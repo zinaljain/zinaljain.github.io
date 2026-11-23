@@ -1,42 +1,83 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Zinal Jain | Robotics, Embedded Systems &amp; IoT</title><meta name="description" content="Zinal Jain, Computer Science Engineering (IoT) student. Research experience in edge AI and projects in UAV navigation and underwater robotics."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Zinal Jain | Robotics, Embedded Systems &amp; IoT</title><meta name="description" content="Zinal Jain, Computer Science Engineering (IoT) student. Research experience in edge AI and projects in UAV navigation and underwater robotics."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css?v=20261123-header3"></head>
 <body><main>
-<section class="intro" aria-label="About me"><div class="intro-text">
+<section class="intro" aria-label="About me"><div class="portrait-frame"><img src="zinal-jain-original.jpg" alt="Zinal Jain" width="960" height="1280"></div><div class="intro-text">
 <h1>Zinal Jain</h1>
 <div class="contact-links"><a href="Zinal_Jain_CV.pdf" download>CV (PDF)</a><span aria-hidden="true"> / </span><a href="mailto:zinalj1605@gmail.com">Email</a><span aria-hidden="true"> / </span><a href="https://github.com/zinaljain" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-<p>I'm a Computer Science Engineering (IoT) student at G H Patel College of Engineering &amp; Technology, with a minor in Robotics. My interests are UAV navigation, edge AI for onboard perception, and IoT-based embedded systems.</p>
-</div><div class="portrait-frame"><img src="zinal-jain-original.jpg" alt="Zinal Jain" width="960" height="1280"></div></section>
-<section><h2>Research interests</h2><p>UAV navigation, embedded perception, and edge AI for robotic and IoT systems.</p></section>
+<p>Hi, I’m Zinal! I’m a final-year Computer Science Engineering (IoT) student with a minor in Robotics. Through aerial and underwater robotics projects, I’ve become interested in how robots perceive their surroundings and navigate reliably with limited computing resources.</p>
+<p>Outside engineering, I enjoy crochet, beadwork, making handmade jewellery, cooking, and exploring different art forms. I also enjoy music across genres, playing sports, and discovering people and places through conversations, food, and history.</p>
+<p>I’m looking for research internships in edge AI, UAV navigation, and robotics. Feel free to <a href="mailto:zinalj1605@gmail.com">reach out</a>.</p>
+</div></section>
+
 <section class="news" aria-labelledby="news-heading"><h2 id="news-heading">News</h2>
 <dl class="dated-list"><div><dt>Aug 2026</dt><dd>Started a research internship at DRDO DTTC, Lucknow.</dd></div></dl></section>
+<section><h2>Research interests</h2>
+<ul>
+  <li>Reliable person detection on devices with limited compute</li>
+  <li>Camera-assisted UAV navigation and landing</li>
+  <li>Communication reliability between onboard computers and flight controllers</li>
+</ul></section>
 <section><h2>Research experience</h2>
 <article><div class="entry-heading"><h3>Research Intern, DRDO DTTC</h3><span>August 2026 – present</span></div><p class="subheading">Defence Technology &amp; Test Centre, Lucknow</p>
 <p><strong>Edge AI-Based Human Detection and Alert System for Perimeter Surveillance</strong></p>
 <p>I built and tested a laptop prototype for video capture, detection, and event recording.</p>
-<ul><li><strong>Pipeline:</strong> motion detection → MobileNet-SSD V2 on ONNX Runtime → multi-frame confirmation → event record.</li><li><strong>Proposed hardware:</strong> Raspberry Pi, camera, EBYTE E22 LoRa, and ESP32. Hardware implementation is future work.</li></ul></article></section>
-<section><h2>Selected projects</h2>
-<article><div class="entry-heading"><h3>Neerkavach</h3><span>2026 – ongoing</span></div><p class="subheading">Semi-autonomous water rescue drone · Team project</p>
-<p>A rescue-drone prototype designed to fly to a person in distress, land on water, and use two thrusters to move a flotation tube toward them until help arrives.</p>
-<p>I worked on flight-controller calibration and setup, waypoint mission planning, and operating semi-autonomous flights from a laptop ground station.</p>
-<ul class="project-status"><li><strong>Tested:</strong> Waypoint missions and water landings on the prototype; person detection validated separately in simulation.</li><li><strong>Ongoing:</strong> Depth-camera-based landing and onboard detection.</li></ul>
-</article>
-<article><div class="entry-heading"><h3>ARCNET</h3><span>2025</span></div><p class="subheading">Aerial Robotics Minefield Navigation · Team project</p>
-<p>I worked on the Raspberry Pi 4–Pixhawk MAVLink connection for commands and telemetry, troubleshot connection settings, and set up ArduPilot for waypoint navigation.</p>
-<p>I verified live telemetry reception and command acknowledgements. For flight operations, we later used a telemetry-radio connection with the laptop ground station. Our team produced a working drone navigation prototype.</p>
-</article>
-<article><div class="entry-heading"><h3>KRAKEN</h3><span>2024</span></div><p class="subheading">Underwater remotely operated vehicle · Team project</p>
-<p>I worked on project documentation and helped with wiring and assembly. Our team built a working underwater ROV with eight thrusters and six degrees of freedom.</p>
-</article></section>
+<ul><li><strong>Pipeline:</strong> motion detection → MobileNet-SSD V2 on ONNX Runtime → multi-frame confirmation → event record.</li><li>Future work: Raspberry Pi deployment and embedded integration.</li></ul></article></section>
+
+<section aria-labelledby="projects-heading">
+  <h2 id="projects-heading">Selected projects</h2>
+  <article class="project">
+    <figure>
+      <img src="neerkavach.png" alt="Red Neerkavach water rescue drone shown above water" width="537" height="498" loading="lazy">
+      <figcaption>Water rescue drone.</figcaption>
+    </figure>
+    <div>
+      <div class="entry-heading"><h3>Neerkavach</h3><span>2026</span></div>
+      <p class="subheading">Semi-autonomous water rescue drone · Team project</p>
+      <p>A drone designed to land on water and move a flotation tube toward a person using two thrusters. I handled flight-controller setup and calibration, waypoint planning, and test flights from a laptop ground station.</p>
+      <p>The team tested waypoint missions and water landings. Person detection was validated in simulation; onboard detection and depth-camera-assisted landing are still in development.</p>
+    </div>
+  </article>
+  <article class="project">
+    <figure>
+      <img src="arcnet.png" alt="ARCNET design illustration showing four drones in formation" width="601" height="451" loading="lazy">
+      <figcaption>Swarm design illustration.</figcaption>
+    </figure>
+    <div>
+      <div class="entry-heading"><h3>ARCNET</h3><span>2025</span></div>
+      <p class="subheading">Aerial Robotics Minefield Navigation · Team project</p>
+      <p>Our team built a working drone navigation prototype.</p>
+      <p>I set up the Raspberry Pi 4–Pixhawk MAVLink connection and ArduPilot for waypoint navigation, verifying live telemetry reception and command acknowledgements.</p>
+      <p>For flight operations, we later used a telemetry-radio connection with the laptop ground station.</p>
+    </div>
+  </article>
+  <article class="project">
+    <figure>
+      <img src="kraken-underwater.png" alt="KRAKEN underwater ROV submerged in a pool" width="445" height="192" loading="lazy">
+      <figcaption>KRAKEN underwater.</figcaption>
+    </figure>
+    <div>
+      <div class="entry-heading"><h3>KRAKEN</h3><span>2024</span></div>
+      <p class="subheading">Underwater remotely operated vehicle · Team project</p>
+      <p>I worked on project documentation and helped with wiring and assembly. Our team built a working underwater ROV with eight thrusters and six degrees of freedom.</p>
+    </div>
+  </article>
+</section>
 <section aria-labelledby="awards-heading"><h2 id="awards-heading">Awards and funding</h2>
 <dl class="dated-list awards">
 <div><dt>2026</dt><dd><strong>National Finalist, GUJCOST Robofest 6.0 Hackathon</strong><br>Neerkavach · ₹50,000 in team project funding</dd></div>
 <div><dt>2025</dt><dd><strong>National Finalist, GUJCOST Robofest 5.0</strong><br>ARCNET · ₹2,50,000 in team project funding</dd></div>
 <div><dt>2024</dt><dd><strong>National Finalist, GUJCOST Robofest 4.0</strong><br>KRAKEN · ₹2,50,000 in team project funding</dd></div>
-<div><dt>SSIP</dt><dd><strong>Second Prize, SSIP Competition</strong><br>KRAKEN · ₹10,000 in project funding</dd></div>
+<div><dt>2024</dt><dd><strong>Second Prize, SSIP Competition</strong><br>KRAKEN · ₹10,000 in project funding</dd></div>
 </dl></section>
 <section class="compact"><h2>Education</h2><p>B.Tech CSE (IoT), Minor in Robotics · G H Patel College of Engineering &amp; Technology · <strong>CGPA 8.56/10</strong> · Expected May 2027</p></section>
-<section class="compact"><h2>Skills</h2><p>Python · C/C++ · Raspberry Pi · Pixhawk / ArduPilot · MAVLink · Mission Planner · QGroundControl</p></section>
-</main><footer><span>Zinal Jain</span><span>Last updated: 30 October 2026</span></footer></body></html>
+<section class="compact"><h2>Skills</h2>
+<p><strong>Languages:</strong> C/C++, Embedded C, Python<br>
+<strong>Embedded systems:</strong> Arduino, ESP32/ESP8266, Raspberry Pi 4, Pixhawk<br>
+<strong>Interfaces:</strong> UART, I2C, SPI<br>
+<strong>Communication:</strong> MAVLink, MQTT, Wi-Fi<br>
+<strong>AI / Computer vision:</strong> OpenCV, MobileNet-SSD, ONNX Runtime<br>
+<strong>Tools:</strong> Git/GitHub, VS Code, ArduPilot, Mission Planner, QGroundControl, MAVProxy</p></section>
+</main><footer><span>Zinal Jain</span><span>Last updated: 23 November 2026</span></footer></body></html>
 
 
 
